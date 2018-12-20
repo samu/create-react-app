@@ -1,4 +1,7 @@
 {
+  "version": "2.1.1",
+  "name": "create-react-app",
+  "description": "it's a fork",
   "private": true,
   "workspaces": [
     "packages/*"

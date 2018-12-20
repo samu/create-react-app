@@ -7,7 +7,7 @@
     "start": "cross-env NODE_ENV=development node build.js --watch",
     "test": "cross-env NODE_ENV=test jest",
     "build": "cross-env NODE_ENV=development node build.js",
-    "build:prod": "cross-env NODE_ENV=production node build.js"
+    "build:prod": "NODE_ENV=production node build.js"
   },
   "repository": "facebook/create-react-app",
   "license": "MIT",
@@ -30,13 +30,12 @@
   ],
   "devDependencies": {
     "@babel/code-frame": "7.0.0",
-    "@babel/core": "7.1.0",
+    "@babel/core": "7.2.2",
     "anser": "1.4.7",
-    "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
     "babel-jest": "23.6.0",
     "babel-loader": "8.0.4",
-    "babel-preset-react-app": "^6.1.0",
+    "babel-preset-react-app": "file:../babel-preset-react-app",
     "chalk": "^2.3.2",
     "chokidar": "^2.0.2",
     "cross-env": "5.2.0",
