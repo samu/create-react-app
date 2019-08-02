@@ -163,6 +163,12 @@ module.exports = function(api, opts, env) {
           useBuiltIns: true,
         },
       ],
+      [
+        require('@babel/plugin-proposal-pipeline-operator').default,
+        {
+          proposal: 'minimal',
+        },
+      ],
       // Polyfills the runtime needed for async/await, generators, and friends
       // https://babeljs.io/docs/en/babel-plugin-transform-runtime
       [
